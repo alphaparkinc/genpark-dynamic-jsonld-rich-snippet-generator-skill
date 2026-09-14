@@ -1,0 +1,42 @@
+{
+  "name": "genpark-dynamic-jsonld-rich-snippet-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Generative Schema.org Product and FAQPage JSON-LD rich snippet generator optimizing search engine microdata indexing.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "search-seo",
+  "tags": [
+    "json-ld",
+    "schema-org",
+    "rich-snippets",
+    "seo-optimization",
+    "microdata"
+  ],
+  "inputs": {
+    "product_title": {
+      "type": "string",
+      "default": "Roborock Q Revo Robot Vacuum"
+    },
+    "brand": {
+      "type": "string",
+      "default": "Roborock"
+    },
+    "price_usd": {
+      "type": "number",
+      "default": 799.0
+    }
+  },
+  "outputs": {
+    "snippet_id": {
+      "type": "string"
+    },
+    "schema_product_jsonld": {
+      "type": "string"
+    },
+    "search_rich_result_eligible": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
